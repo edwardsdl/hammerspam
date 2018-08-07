@@ -1,0 +1,5 @@
+*.md
+**/__pycache__
+venv
+hammerspam/resources/ham
+hammerspam/resources/spam
