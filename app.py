@@ -13,7 +13,10 @@ def index():
 
 @app.route('/classification', methods=['POST'])
 def classification():
-    return pipeline.predict([request.data])[0]
+    email = request.data
+    prediction = pipeline.predict([email])
+
+    return prediction[0]
 
 
 if __name__ == '__main__':
